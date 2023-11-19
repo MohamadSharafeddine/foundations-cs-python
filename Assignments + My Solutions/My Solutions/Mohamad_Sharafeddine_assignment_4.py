@@ -2,7 +2,6 @@ cities = {"Beirut", "Saida", "Tyre", "Jbeil", "Tripoli"}
 drivers = {"Ali":["Beirut", "Saida", "Tyre"], "Moussa":["Jbeil", "Beirut"], "Ahmad":["Tripoli", "Jbeil", "Beirut"]}
 print(cities)
 print(drivers)
-
 def displayMainMenu():
     print("Enter:\n1. To add a city\n2. To add a driver\n3. To add a city to the route of a driver\n4. Remove a city from a driver's route\n5. To check the deliverability of a package")
 
