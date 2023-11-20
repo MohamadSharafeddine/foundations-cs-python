@@ -12,11 +12,10 @@ def selectionSort(list1):
 
 # Merge Sort:
 def mergeSort(list1, start, end):
-  list1 = list1[::-1] # <--- Change in code
   if start == end:
     return
   mid = (start + end) // 2
-  mergeSort(list1, start,mid)
+  mergeSort(list1, start, mid)
   mergeSort(list1, mid + 1, end)
   merge(list1, start, mid, end)
 
@@ -26,7 +25,7 @@ def merge(list1, start, mid, end):
   ind2 = mid + 1
 
   while ind1 <= mid and ind2 <= end:
-    if list1[ind1] < list1[ind2]:
+    if list1[ind1] > list1[ind2]: # <--- Change in code
       new_list.append(list1[ind1])
       ind1 += 1
     else:
